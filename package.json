@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "amplify:amplifytypescriptlamcommons": "cd amplify/backend/function/amplifytypescriptlamcommons/opt && yarn install && yarn global add typescript && tsc && cd -",
-    "amplify:function1": "cd amplify/backend/function/function1/src && yarn install && yarn global add typescript && tsc && cd -"
+    "amplify:amplifytypescriptlamcommons": "cd amplify/backend/function/amplifytypescriptlamcommons/opt &&  yarn --ignore-engines && yarn install && yarn global add typescript && tsc && cd -",
+    "amplify:function1": "cd amplify/backend/function/function1/src && yarn --ignore-engines && yarn install && yarn global add typescript && tsc && cd -"
   },
   "author": "",
   "license": "ISC",
