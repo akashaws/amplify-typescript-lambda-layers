@@ -1,0 +1,23 @@
+{
+  "function": {
+    "amplifytypescriptlamcommons": {
+      "providerPlugin": "awscloudformation",
+      "service": "LambdaLayer",
+      "build": true
+    },
+    "function1": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "amplifytypescriptlamcommons",
+          "attributes": [
+            "Arn"
+          ]
+        }
+      ]
+    }
+  }
+}
