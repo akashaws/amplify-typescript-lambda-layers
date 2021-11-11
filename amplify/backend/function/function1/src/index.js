@@ -1,4 +1,4 @@
-import Logger from "../../amplifytypescriptlamcommons/opt/Logger";
+import { Logger } from "../../amplifytypescriptlamcommons/opt/Logger";
 
 exports.handler = async (event) => {
   Logger.log("test logging");
